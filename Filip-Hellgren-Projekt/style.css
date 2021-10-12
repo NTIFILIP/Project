@@ -132,6 +132,12 @@ main {
   text-align: center;
 }
 
+.image-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .recipe-list {
   display: flex;
   flex-direction: column;
