@@ -135,7 +135,19 @@ main {
 .image-buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+}
+
+.image-buttons img {
+  border: 2px solid rgb(255, 184, 184);
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+.image-buttons h3 {
 }
 
 .recipe-list {
@@ -205,4 +217,14 @@ main {
   flex-grow: 1;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .image-buttons {
+    flex-direction: column;
+  }
+
+  .image-buttons img {
+    width: 100%;
+  }
 }
