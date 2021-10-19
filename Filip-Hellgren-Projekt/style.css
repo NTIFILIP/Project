@@ -135,19 +135,41 @@ main {
 .image-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: fit-content;
 }
 
-.image-buttons img {
+.image-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 30%;
+  height: 60vh;
   border: 2px solid rgb(255, 184, 184);
-  text-align: center;
-  width: 90%;
-  height: 100%;
+  text-decoration: none;
 }
 
-.image-buttons h3 {
+.image-buttons a:hover {
+  filter: opacity(0.7);
+}
+
+.large-recipe-button {
+  background-image: url(images/spaghetti/spaghetti4.jpg);
+}
+
+.large-about-button {
+  background-image: url(images/spaghetti/spaghetti5.jpg);
+}
+
+.large-contact-button {
+  background-image: url(images/spaghetti/spaghetti6.jpg);
+}
+
+.image-buttons h1 {
+  color: whitesmoke;
+  filter: drop-shadow(2px 2px 3px black);
 }
 
 .recipe-list {
@@ -222,9 +244,10 @@ main {
 @media (max-width: 600px) {
   .image-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
-  .image-buttons img {
-    width: 100%;
+  .image-buttons a {
+    width: 80%;
   }
 }
