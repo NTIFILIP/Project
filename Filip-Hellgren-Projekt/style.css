@@ -15,11 +15,8 @@ h6 {
   font-family: roboto;
 }
 
-p {
-  font-family: lora;
-}
-
 body {
+  font-family: lora;
   margin: 0;
   background-color: whitesmoke;
 }
@@ -30,10 +27,6 @@ header {
   height: 50px;
   top: 0;
   color: whitesmoke;
-}
-
-h1 {
-  font-size: 25px;
 }
 
 img {
@@ -48,11 +41,6 @@ img {
   background-color: rgb(206, 0, 0);
   height: 100%;
   padding-left: 2.5%;
-  white-space: nowrap;
-}
-
-.nav-bar h3 {
-  color: whitesmoke;
 }
 
 .home-button {
@@ -60,6 +48,7 @@ img {
   align-items: center;
   margin-left: 20px;
   margin-right: auto;
+  color: whitesmoke;
   height: 100%;
 }
 
@@ -124,10 +113,6 @@ img {
   background-color: red;
 }
 
-.dropdown-content li {
-  width: 100%;
-}
-
 .dropdown-content a {
   display: flex;
   justify-content: center;
@@ -149,7 +134,7 @@ header a:hover,
 }
 
 main {
-  width: 70vw;
+  width: 70%;
   height: fit-content;
   margin: 70px auto;
   z-index: -1;
@@ -184,15 +169,15 @@ main {
   filter: opacity(0.7);
 }
 
-.large-recipe-button {
+.home-recipe-button {
   background-image: url(images/spaghetti/spaghetti4.jpg);
 }
 
-.large-about-button {
+.home-about-button {
   background-image: url(images/spaghetti/spaghetti5.jpg);
 }
 
-.large-contact-button {
+.home-contact-button {
   background-image: url(images/spaghetti/spaghetti6.jpg);
 }
 
@@ -206,7 +191,7 @@ main {
   flex-direction: column;
   background-color: rgb(255, 160, 160);
   height: fit-content;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 25px 30px 10px 30px;
   border: 3px solid white;
@@ -314,6 +299,73 @@ main {
 
 .recipe-sidebar img {
   width: 100%;
+}
+
+.form-caption {
+  background-color: rgb(255, 137, 137);
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+
+form :nth-child(2n) {
+  margin-bottom: 10px;
+}
+
+form :last-child {
+  margin-top: 25px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+textarea {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 178, 178);
+}
+
+input[type="text"] {
+  height: 25px;
+}
+
+input[type="email"] {
+  height: 15px;
+}
+
+input[type="submit"] {
+  background-color: rgb(255, 106, 106);
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 178, 178);
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-images img {
+  width: 100%;
+}
+
+.about-image-object {
+  width: 60%;
+}
+
+.image-description {
+  margin: 0 0 70px 0;
 }
 
 @media (max-width: 600px) {
